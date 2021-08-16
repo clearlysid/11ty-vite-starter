@@ -1,7 +1,7 @@
 {
-	"name": "11ty-vite-starter",
+	"name": "hackout-2021",
 	"version": "0.1.0",
-	"description": "Boilerplate for small web projects, with 11ty and Vite",
+	"description": "Landing page for the Hackout 2021 event",
 	"author": "Siddharth Jha <siddharth99c@gmail.com>",
 	"license": "MIT",
 	"private": false,
@@ -18,6 +18,7 @@
 		"concurrently": "^6.2.0",
 		"sass": "^1.35.1",
 		"serve": "^12.0.0",
+		"vanilla-tilt": "^1.7.1",
 		"vite": "^2.3.8"
 	}
 }

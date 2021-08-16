@@ -1,5 +1,93 @@
 ---
 layout: default
+title: Hackout 2021 — Coming Soon!
 ---
 
-~yay this page works~
+<header class="container">
+	<div class="header-container">
+		<img src="assets/hackout-logo.svg" id="hackout-logo" alt="" />
+		<h3>Coming October 2021</h3>
+		<p>
+			A 48-hour online hackathon with prizes worth over
+			<span>₹1 lakh</span>, internships and full-time
+			<span>opportunities at Headout</span> and lots of exciting
+			<span>schwag!</span>
+		</p>
+		<div class="cta">
+			<a href="https://discord.gg/e9G7J9E" target="_blank" rel="noreferrer noopener">
+				<button class="header-cta" id="discord">
+					<img src="/assets/svg/discord.svg" alt="Hackout Discord">
+					<div>Join us on Discord</div>
+				</button>
+			</a>
+		</div>
+		<div class="title-sponsor">
+			<p>Brought to you by:</p>
+			<a href="https://headout.com" target="_blank" class="title-sponsor">
+				<img src="/assets/headout-logo.svg" alt="Headout's Logo">
+			</a>
+		</div>
+
+</header>
+
+<section class="speakers container">
+
+	<h2 id="speakers">Past Speakers</h2>
+
+	<p>
+		We're hard at work bringing together an incredible line up of speakers for this year! Meanwhile, you can have a
+		look at our last year's line up.
+	</p>
+
+	<div class="speakers-list">
+		{% for speaker in speakers.2020 %}
+		<div class="speaker-card-mini">
+			<img src="assets{{ speaker.image }}" alt="{{ speaker.name }}">
+			<div class="speaker-name">{{ speaker.name }}</div>
+			<div class="speaker-title">{{ speaker.title }}</div>
+		</div>
+		{% endfor %}
+	</div>
+
+</section>
+
+<section class="prizes container">
+
+	<h2 id="prizes">Prizes</h2>
+
+	<div class="prizes-primary">
+		<img src="assets/prizes/first.svg" alt="" />
+		<img src="assets/prizes/second.svg" alt="" />
+		<img src="assets/prizes/third.svg" alt="" />
+	</div>
+</section>
+
+<section class="sponsor container">
+	<h2 id="sponsors">Sponsors</h2>
+
+	<div class="sponsors title">
+		<h4>Title Sponsor</h4>
+		<a href="https://www.headout.com" target="_blank" rel="noreferrer"><img src="assets/headout-logo.svg"
+				alt="Headout Logo" /></a>
+	</div>
+
+	<div class="sponsors gold">
+		<h4>Gold Sponsor</h4>
+		<a href="https://www.devfolio.co" target="_blank" rel="noreferrer"><img src="assets/sponsors/devfolio.svg"
+				alt="Devfolio Logo" /></a>
+	</div>
+
+	<div class="sponsors silver">
+		<h4>Silver Sponsors</h4>
+		<div>
+			<a href="https://matic.network" target="_blank" rel="noreferrer"><img src="assets/sponsors/matic.png"
+					alt="Matic Logo" /></a>
+			<a href="https://tezos.com" target="_blank" rel="noreferrer"><img src="assets/sponsors/tezos.png"
+					alt="Tezos Logo" /></a>
+			<a href="https://www.portis.io" target="_blank" rel="noreferrer"><img src="assets/sponsors/portis.png"
+					alt="Portis Logo" /></a>
+			<a href="https://fold.money" target="_blank" rel="noreferrer"><img src="assets/sponsors/fold.png"
+					alt="Fold Logo" /></a>
+		</div>
+	</div>
+</section>

@@ -1,3 +1,212 @@
+@import "navigation";
+@import "footer";
+
 body {
-	background: lightgoldenrodyellow;
+	font-family: "halyard-text";
+	font-weight: 300;
+	font-size: 0.94rem;
+	letter-spacing: -0.2px;
+	font-feature-settings: "'SS04' 1";
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(99.75deg, #330066 0%, #333333 129.17%);
+	background-repeat: no-repeat;
+	color: white;
+	min-height: 100vh;
+}
+
+p {
+	text-align: center;
+	max-width: 480px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+h2 {
+	font-family: "halyard-display";
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 54px;
+	text-align: center;
+	letter-spacing: 0.6px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1000px;
+	padding-left:100px;
+	padding-right:100px;
+	margin: 0 auto;
+}
+
+.speakers-list {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	row-gap: 2rem;
+	margin-top: 3rem;
+}
+
+.speaker-card-mini {
+	width: 180px;
+	display: grid;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.speaker-card-mini img {
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.speaker-name {
+	font-size: 1.2em;
+	letter-spacing: 0;
+}
+
+.speaker-title {
+	font-size: 0.8em;
+	opacity: 0.6;
+}
+
+.speaker-name, .speaker-title {
+	text-align: center;
+}
+
+section {
+	padding: 4rem 0;
+}
+
+header.container {
+	height: 400px;
+	padding-top: 140px;
+
+	.header-container {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+
+		#hackout-logo {
+			margin: 0 auto;
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		.cta {
+			margin: auto;
+			margin-bottom: 2rem;
+		}
+
+		.title-sponsor{
+
+			margin: auto;
+			p {
+				margin-bottom: 1em;
+			}
+			img {
+				width: 200px;
+			}
+		} 
+
+	}
+}
+
+button {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	border: none;
+	outline: none;
+	box-shadow: 2px 8px 8px #170636;
+
+	img {
+		height: 1.4em;
+		margin-right: 0.4em;
+	}
+
+    &:hover {
+        background-color: #2954bf;
+    }
+}
+
+#discord {
+    background: #7289da;
+}
+
+.prizes-primary {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	z-index: -100;
+
+	@media screen and (max-width: 600px){
+		grid-template-columns: 1fr;
+		width: 80%;
+		margin: 0 auto;
+		row-gap: 20px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.sponsors {
+    text-align: center;
+	margin-bottom: 3rem;
+	
+	img {
+		width: 360px;
+	}
+
+	h4 {
+		font-weight: 300;
+	}
+
+    @media screen and (max-width: 600px) {
+        img {
+            width: 300px;
+        }
+	}
+}
+
+.sponsors.gold {
+	img { width: 240px }
+} 
+
+.sponsors.silver {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        height: 40px;
+        width: auto;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: space-between;
+        width: 800px;
+        row-gap: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+        div {
+            width: 80%;
+        }
+    }
 }
